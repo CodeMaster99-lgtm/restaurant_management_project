@@ -14,3 +14,6 @@ def  get_menu_items(request):
     ]
     return JsonResponse(menu_items, safe=False)
 
+def contact_page(request):
+    return render(request, 'contact.html')
+
