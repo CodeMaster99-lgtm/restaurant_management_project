@@ -8,3 +8,4 @@
 
     'home',
  ]
+ RESTAURANT_PHONE = "+91-9876543210"
