@@ -1,8 +1,10 @@
 from django.http import JsonResponse
 from django.shortcuts import render
+from django.conf import settings
 
 def menu_page(request):
-    return render(request, 'menu.html')
+    phone_number = settings.RESTAURANT_PHONE
+    return render(request, 'home/menu.html',{'phone':phone_number})
 
 def  get_menu_items(request):
 
