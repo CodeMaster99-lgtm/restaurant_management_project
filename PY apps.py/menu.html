@@ -4,14 +4,13 @@
     </head>
     <body>
         <h1>RestuaurantMenu</h1>
-        <ul id="menu-list">
-        </ul>
+        <ul id="menu-list"></ul>
         
         <script>
             frtch('/api/menu/')
             .then(response=> response.json())
             .then(data => {
-                const list = document.getElementById('menu-list'):
+                const list = document.getElementById('menu-list');
                 data.forEach(item =>{
                      const li = document.createElement('li');
                      li.textContent = ${item.name} - ${item.price};
