@@ -5,10 +5,8 @@ from .models import Restaurant
 
 def homepage(request):
     restaurant =
-Restaurant.objects.first()  #
-Assuming you have at least one
-entry
-return render(request,'homepage.html',{'restaurant_name':})
+Restaurant.objects.first() 
+return render(request,'homepage.html',{'Spice & Spoon':Spice & Spoon})
 
 
 def menu_list(request):
