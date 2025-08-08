@@ -6,7 +6,7 @@ from .models import Restaurant
 def homepage(request):
     restaurant =
 Restaurant.objects.first() 
-return render(request,'homepage.html',{'Spice & Spoon':Spice & Spoon})
+return render(request,'homepage.html',{'restaurant_name':Spice & Spoon,'restaurant_address':restaurant_address})
 
 
 def menu_list(request):
