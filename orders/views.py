@@ -1,6 +1,15 @@
 from django.shortcuts import render
 from .models import Menu, Order
 from .forms import OrderForm
+from .models import Restaurant
+
+def homepage(request):
+    restaurant =
+Restaurant.objects.first()  #
+Assuming you have at least one
+entry
+return render(request,'homepage.html',{'restaurant_name':})
+
 
 def menu_list(request):
     menus = Menu.objects.all()
