@@ -1,9 +1,7 @@
-from django.apps import AppConfig
+from flask import Flask, render_template,
+from flask_aqlalchemy  import SQLAlchemy
 
-
-class HomeConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'home'
-
-def  ready(self):
-    import home.signals
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///contact.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = flask_aqlalchemy
+db = SQLAlchemy
